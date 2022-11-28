@@ -9,58 +9,73 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Easybank landing page</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Nav Bar -->
   <nav>
-    <ul>
+    <ul class="ul-bar">
       <li>
         <a href="#">
           <img src="images/logo.svg" alt="easy bank logo">
         </a>
       </li>
-      <!-- // buger icon  -->
-      <li>
-        <img src="images/icon-hamburger.svg" alt="open menu">
-        <img src="images/icon-close.svg" alt="close menu">
-      </li>
-      <!-- // buger icon  -->
-      <li>
-        <a href="#">
-          <div>Home</div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div>About</div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div>Contact</div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div>Blog</div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div>Careers</div>
-        </a>
-      </li>
-      <li>
-        <a href="#">Request Invite</a>
-      </li>
+      <div>
+        <!-- // buger icon  -->
+        <li class="nav-sm-menu">
+          <button>
+            <img src="images/icon-hamburger.svg" alt="open menu">
+          </button>
+          <button>
+            <img src="images/icon-close.svg" alt="close menu">
+          </button>
+        </li>
+        <!-- // buger icon  -->
+      </div>
+      <div class="icon-li">
+        <li>
+          <a href="#">
+            <div>Home</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div>About</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div>Contact</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div>Blog</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div>Careers</div>
+          </a>
+        </li>
+
+      </div>
+      <div class="nav-req-invite">
+        <li>
+          <a href="#">Request Invite</a>
+        </li>
+      </div>
     </ul>
   </nav>
   <!-- Nav Bar -->
-  <main>
-    <section>
-      <div>
+  <main class="container">
+    <section class="hero-section">
+      <div class="sm-big-img">
         <img src="images/image-mockups.png" alt="mockup">
       </div>
       <div>
@@ -74,7 +89,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="easybank-section">
       <div>
         <h2> Why choose Easybank? </h2>
         <p>
@@ -122,16 +137,16 @@
         <h2> Latest Articles </h2>
       </div>
       <div>
-        <div>
+        <div class="sm-big-img">
           <img src="images/image-currency.jpg" alt="receive money">
           <p>By Claire Robinson</p>
           <p>
             Receive money in any currency with no fees
-            The world is getting smaller and we’re becoming more mobile. So why should you be
+            The world is getting smaller and we`re becoming more mobile. So why should you be
             forced to only receive money in a single …
           </p>
         </div>
-        <div>
+        <div class="sm-big-img">
           <img src="images/image-restaurant.jpg" alt="treat yourself">
           <p>By Wilson Hutton</p>
           <p>
@@ -140,7 +155,7 @@
             realistic limits each month. That means you …
           </p>
         </div>
-        <div>
+        <div class="sm-big-img">
           <img src="images/image-plane.jpg" alt="take your easybank card">
           <p>By Wilson Hutton</p>
           <p>
@@ -149,7 +164,7 @@
             while you`re abroad. We`ll even show you …
           </p>
         </div>
-        <div>
+        <div class="sm-big-img">
           <img src="images/image-confetti.jpg" alt="our invite0only Beta">
           <p> By Claire Robinson</p>
           <p>

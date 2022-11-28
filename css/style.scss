@@ -1,0 +1,120 @@
+:root {
+    /* Dark Blue: hsl(233, 26%, 24%) */
+    --clr-primary-100: hsl(233, 26%, 24%);
+    /* Lime Green: hsl(136, 65%, 51%) */
+    --clr-primary-200: hsl(136, 65%, 51%);
+    /* Bright Cyan: hsl(192, 70%, 51%) */
+    --clr-primary-300: hsl(192, 70%, 51%);
+    /* Grayish Blue: hsl(233, 8%, 62%) */
+    --clr-neutral-100: hsl(233, 8%, 62%);
+    /* Light Grayish Blue: hsl(220, 16%, 96%) */
+    --clr-neutral-200: hsl(220, 16%, 96%);
+    /* Very Light Gray: hsl(0, 0%, 98%) */
+    --clr-neutral-300: hsl(0, 0%, 98%);
+    /* White: hsl(0, 0%, 100%) */
+    --clr-neutral-white: hsl(0, 0%, 100%);
+
+}
+
+body,
+html {
+    /* Weights: 300, 400, 700 */
+    font-family: 'Public Sans', sans-serif;
+}
+
+p {
+    font-size: 18px
+}
+
+/* 
+Mobile: 375px
+Desktop: 1440px */
+.container {
+    --max-width: 1440px;
+    --padding: 1rem;
+    width: min(var(--max-width), 100% - (var(--padding) *2));
+    margin-inline: auto;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+nav {
+    background-color: white;
+    padding: 1rem;
+}
+
+.ul-bar {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+    .icon-li {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.nav-sm-menu {
+    display: none;
+}
+
+@media (max-width: 40rem) {
+    .ul-bar {
+
+        .icon-li,
+        .nav-req-invite {
+            display: none;
+        }
+    }
+
+    .nav-sm-menu {
+        display: block;
+    }
+
+    .sm-big-img img {
+        max-width: 100%;
+        height: auto;
+        margin-inline: auto;
+    }
+
+    .hero-section {
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .easybank-section {
+        text-align: center;
+    }
+}
+
+@media (min-width: 40rem) and (max-width: 50rem) {
+    .nav-req-invite {
+        display: none;
+    }
+}
+
+@media (min-width: 50rem) {
+    .nav-req-invite {
+        display: block;
+    }
+}
