@@ -18,7 +18,7 @@
 
 <body>
   <!-- Nav Bar -->
-  <nav>
+  <nav class="container" role="navigation">
     <ul class="ul-bar">
       <li>
         <a href="#">
@@ -32,7 +32,7 @@
             <img src="images/icon-hamburger.svg" alt="open menu">
           </button>
           <button>
-            <img src="images/icon-close.svg" alt="close menu">
+            <img class="none" src="images/icon-close.svg" alt="close menu">
           </button>
         </li>
         <!-- // buger icon  -->
@@ -67,13 +67,13 @@
       </div>
       <div class="nav-req-invite">
         <li>
-          <a href="#">Request Invite</a>
+          <a href="#" class="req-invite-btn btn">Request Invite</a>
         </li>
       </div>
     </ul>
   </nav>
   <!-- Nav Bar -->
-  <main class="container">
+  <main role="main" class="container">
     <section class="hero-section">
       <div class="sm-big-img">
         <img src="images/image-mockups.png" alt="mockup">
@@ -85,7 +85,7 @@
             Take your financial life online. Your Easybank account will be a one-stop-shop
             for spending, saving, budgeting, investing, and much more.
           </p>
-          <a href="#">Request Invite</a>
+          <a href="#" class="req-invite-btn btn">Request Invite</a>
         </div>
       </div>
     </section>
@@ -139,69 +139,80 @@
       <div>
         <div class="sm-big-img">
           <img src="images/image-currency.jpg" alt="receive money">
-          <p>By Claire Robinson</p>
-          <p>
-            Receive money in any currency with no fees
-            The world is getting smaller and we`re becoming more mobile. So why should you be
-            forced to only receive money in a single …
-          </p>
+          <div class="latest-articles">
+            <p class="author-name">By Claire Robinson</p>
+            <h4>Receive money in any currency with no fees</h4>
+            <p>
+              The world is getting smaller and we`re becoming more mobile. So why should you be
+              forced to only receive money in a single …
+            </p>
+          </div>
         </div>
         <div class="sm-big-img">
           <img src="images/image-restaurant.jpg" alt="treat yourself">
-          <p>By Wilson Hutton</p>
-          <p>
-            Treat yourself without worrying about money
-            Our simple budgeting feature allows you to separate out your spending and set
-            realistic limits each month. That means you …
-          </p>
+          <div class="latest-articles">
+            <p class="author-name">By Wilson Hutton</p>
+            <h4> Treat yourself without worrying about money </h4>
+            <p>
+              Our simple budgeting feature allows you to separate out your spending and set
+              realistic limits each month. That means you …
+            </p>
+          </div>
         </div>
         <div class="sm-big-img">
           <img src="images/image-plane.jpg" alt="take your easybank card">
-          <p>By Wilson Hutton</p>
-          <p>
-            Take your Easybank card wherever you go
-            We want you to enjoy your travels. This is why we don`t charge any fees on purchases
-            while you`re abroad. We`ll even show you …
-          </p>
+          <div class="latest-articles">
+            <p class="author-name">By Wilson Hutton</p>
+            <h4> Take your Easybank card wherever you go </h4>
+            <p>
+              We want you to enjoy your travels. This is why we don`t charge any fees on purchases
+              while you`re abroad. We`ll even show you …
+            </p>
+          </div>
         </div>
         <div class="sm-big-img">
           <img src="images/image-confetti.jpg" alt="our invite0only Beta">
-          <p> By Claire Robinson</p>
-          <p>
-            Our invite-only Beta accounts are now live!
-            After a lot of hard work by the whole team, we`re excited to launch our closed beta.
-            It`s easy to request an invite through the site ...
-          </p>
+          <div class="latest-articles">
+            <p class="author-name"> By Claire Robinson</p>
+            <h4> Our invite-only Beta accounts are now live! </h4>
+            <p>
+              After a lot of hard work by the whole team, we`re excited to launch our closed beta.
+              It`s easy to request an invite through the site ...
+            </p>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer>
-    <div>
-      <a href="#"> <img src="images/logo.svg" alt="easybank logo"></a>
+  <footer role="contentinfo">
+    <div class="container">
+      <div>
+        <a href="#"> <img src="images/logo-footer.svg" alt="easybank logo"></a>
+      </div>
+      <div class="footer-icons">
+        <a href="#"><img src="images/icon-facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="images/icon-youtube.svg" alt="youtube"></a>
+        <a href="#"><img src="images/icon-twitter.svg" alt="twitter"></a>
+        <a href="#"><img src="images/icon-pinterest.svg" alt="pinterest"></a>
+        <a href="#"><img src="images/icon-instagram.svg" alt="instagram"></a>
+      </div>
+      <div class="footer-nav">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#"> Careers</a>
+        <a href="#"> Support </a>
+        <a href="#"> Privacy Policy</a>
+      </div>
+      <div class="row-span-2">
+        <a href="#" class="req-invite-btn btn">Request Invite</a>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/000xzhou">XZ</a>.
+      </div>
     </div>
-    <div>
-      <a href="#"><img src="images/icon-facebook.svg" alt="facebook"></a>
-      <a href="#"><img src="images/icon-youtube.svg" alt="youtube"></a>
-      <a href="#"><img src="images/icon-twitter.svg" alt="twitter"></a>
-      <a href="#"><img src="images/icon-pinterest.svg" alt="pinterest"></a>
-      <a href="#"><img src="images/icon-instagram.svg" alt="instagram"></a>
-    </div>
-    <div>
-      <a href="#">About Us</a>
-      <a href="#">Contact</a>
-      <a href="#">Blog</a>
-      <a href="#"> Careers</a>
-      <a href="#"> Support </a>
-      <a href="#"> Privacy Policy</a>
-    </div>
-    <div>
-      <a href="#">Request Invite</a>
-    </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/000xzhou">XZ</a>.
-    </div>
+
   </footer>
 </body>
 
