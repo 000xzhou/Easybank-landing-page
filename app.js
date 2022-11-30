@@ -3,8 +3,8 @@ const hamburger = document.querySelector("[data-hamburger]")
 const navLinks = document.querySelector(".icon-li")
 const bg = document.querySelector(".bg-thing")
 
-hamburger.addEventListener("pointerup", navMenu)
-bg.addEventListener("pointerup", navMenu)
+hamburger.addEventListener("click", navMenu)
+bg.addEventListener("click", navMenu)
 function navMenu() {
     if (navLinks.style.display === "grid") {
         hamburger.setAttribute("Src", "images/icon-hamburger.svg")
